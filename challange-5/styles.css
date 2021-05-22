@@ -1,0 +1,419 @@
+:root {
+    --strongCyan: hsl(171, 66%, 44%);
+    --lightBlue: hsl(233, 100%, 69%);
+    --darkGrayBlue: hsl(210, 10%, 33%);
+    --grayBlue: hsl(201, 11%, 66%);
+
+    --Baij: 'Bai Jamjuree', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,*::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--Baij);
+    overflow-x: hidden;
+}
+
+/* -------styling--------- */
+
+/* main-header */
+
+main {
+    max-width: 100vw;
+    width: 100%;
+    background: url('bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% auto;
+    padding: 7rem 0;
+}
+
+.logo {
+    padding: 3rem 0 3.5rem;
+    text-align: center;
+}
+
+.header--content h1 {
+    color: var(--darkGrayBlue);
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.header--content p {
+    font-size: 1.25rem;
+    color: var(--grayBlue);
+    padding: 0 24rem 3rem;
+    text-align: center;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.btn-green {
+    display: inline-block;
+    padding: 16px 48px;
+    background-color: var(--strongCyan);
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-right: 7px;
+    box-shadow: 1px 1px 16px var(--strongCyan);
+    transition: 0.25s ease-in 0.1s;
+}
+
+.btn-green:hover {
+    box-shadow: 1px 1px 8px var(--strongCyan);
+    transform: scale(1.02);
+}
+
+.btn-blue {
+    display: inline-block;
+    padding: 16px 48px;
+    background-color: var(--lightBlue);
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-left: 7px;
+    box-shadow: 1px 1px 16px var(--lightBlue);
+    transition: 0.25s ease-in 0.1s;
+}
+
+.btn-blue:hover {
+    box-shadow: 1px 1px 8px var(--lightBlue);
+    transform: scale(1.02);
+}
+
+.features {
+    margin: 3rem auto 6rem;
+    max-width: 100vw;
+    width: 100%;
+}
+
+h2 {
+    color: var(--darkGrayBlue);
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.features p {
+    color: var(--grayBlue);
+    font-size: 1.18rem;
+    padding: 1rem 24rem 2rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.row {
+    max-width: 100vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -3rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.col-2 {
+    padding-bottom: 4rem;
+}
+
+.spec {
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.spec h3 {
+    font-size: 1.25rem;
+    color: var(--darkGrayBlue);
+    padding: 1rem 13rem 0rem;
+}
+
+.spec p {
+    color: var(--grayBlue);
+    padding: 0 13rem;
+    margin-top: 1rem;
+    line-height: 2;
+}
+
+.devices {
+    text-align: center;
+    margin-top: -1rem;
+}
+
+.flex {
+    max-width: 85vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 3rem 4.5% 6rem;
+    align-items: center;
+}
+
+.item {
+    text-align: center;
+    padding: 0 5rem;
+}
+
+.item h3 {
+    color: var(--darkGrayBlue);
+    padding: 1rem 0;
+    font-size: 1.4rem;
+}
+
+.my-1 {
+    margin: 0.5rem auto;
+}
+
+.item p {
+    color: var(--grayBlue);
+    line-height: 1.8;
+    text-align: center;
+}
+
+.tech {
+    padding: 2rem 5rem 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 8rem;
+    background: rgb(226, 226, 226);
+}
+
+.footer--logo img {
+    width: 100px;
+    height: auto;
+}
+
+.footer--links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer--links {
+    margin-left: -20rem;
+}
+
+.footer--links ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+
+.footer--links ul li {
+    padding: 1rem 1.5rem;
+}
+
+.footer--links ul li a {
+    color: var(--grayBlue);
+    text-decoration: none;
+}
+
+.footer--links ul li a:hover {
+    color:hsl(171, 66%, 44%);
+    border-bottom: 3px solid var(--strongCyan);
+    transition: 0.3s;
+}
+
+.navbar-1, .navbar-2, .navbar-3 {
+    margin-left: 6rem;
+}
+
+.footer--social ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.footer--social ul li {
+    padding: 1rem 1.5rem;
+}
+
+.footer--social ul li a img:hover {
+    transform: scale(1.5);
+    transition: 0.25s ease-in 0.1s;
+}
+
+.end {
+    background-color: rgb(226, 226, 226);
+    padding: 1rem;
+    text-align: center;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 430px) {
+
+    main {
+        background: url('bg-header-mobile.png');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100% auto;
+        padding: 5rem 0;
+        max-width: 100vw;
+        width: 100%;
+    }
+
+    .logo img {
+        width: 25vw;
+        height: auto;
+    }
+
+    .header--content h1 {
+        padding: 0 2rem;
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+
+    .header--content p {
+        padding: 0 0.8rem 1.5rem;
+        line-height: 2;
+    }
+
+    .btn-green, .btn-blue {
+        display: block;
+        margin: 1.2rem 1rem;
+    }
+
+    .features p {
+        color: var(--grayBlue);
+        font-size: 1.18rem;
+        text-align: center;
+        line-height: 1.6;
+        padding: 0.5rem 0.8rem 1rem;
+    }
+
+    .row {
+        display: block;
+        margin: 1rem auto 2rem;
+        text-align: center;
+    }
+
+    .col-1 img {
+        max-width: 92vw;
+        width: 100%;
+    }
+
+    .col-2 {
+        margin: 3rem auto;
+    }
+
+    .spec h3 {
+        padding: 1rem 0rem 0.2rem;
+    }
+
+    .spec p {
+        padding: 0rem 1rem;
+    }
+
+    .devices {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .devices img {
+        width: 90vw;
+        height: auto;
+    }
+
+    .flex {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .item  {
+        padding: 1rem 1.5rem;
+        margin: 1.3rem auto;
+    }
+
+    .tech {
+        display: block;
+        text-align: center;
+    }
+
+    .tech img {
+        padding: 2rem 0;
+    }
+
+    footer {
+        margin-top: 10rem;
+        display: block;
+    }
+
+    .footer--logo {
+        text-align: center;
+        padding: 3rem 0;
+    }
+
+    .footer--logo img {
+        width: 16vw;
+        height: auto;
+    }
+
+    .footer--links {
+        text-align: center;
+        display: block;
+        margin-left: 0;
+    }
+
+    .navbar-1, .navbar-2, .navbar-3 {
+        margin-left: 0;
+    }
+
+    .footer--links ul {
+        display: block;
+    }
+
+    .footer--links ul li {
+        padding: 1rem 0;
+    }
+
+    .footer--social ul li {
+        padding: 3rem 1rem 0.5rem;
+    }
+}
+
+/* ============================Vipul Vaishnav================================ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
